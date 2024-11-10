@@ -14,7 +14,7 @@ export const getAnnotations = async (request, response) => {
 export const createAnnotation = async (request, response) => {
     const annotation = request.body; // Data enviada pelo usuário
 
-    if (!annotation.title || !annotation.notes || !annotation.priority) {
+    if (!annotation.title || !annotation.notes || annotation.priority === undefined) {
         return response
             .status(400)
             .json({ success: false, message: "Por favor, preencha todos os campos" });

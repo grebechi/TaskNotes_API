@@ -8,4 +8,4 @@ const app = express();
 
 app.use(express.json());
 app.use(routes);
-app.listen(3333, () => {connectDB()});
+app.listen(process.env.SERVER_PORT, () => {connectDB()});

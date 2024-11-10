@@ -51,6 +51,7 @@ Para garantir a segurança, o projeto utiliza variáveis de ambiente, que são c
 3. Configure as variáveis de ambiente:
 
 - Crie um arquivo **.env** na raiz do projeto com os dados de conexão para o MongoDB e a porta do Servidor:
+
     ```bash
     MONGODB_URI=sua_conexao_mongodb
     SERVER_PORT=3000

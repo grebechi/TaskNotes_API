@@ -1,4 +1,3 @@
-import { request, response } from "express";
 import Annotation from "../models/AnnotationData.js";
 
 export const getAnnotations = async (request, response) => {
